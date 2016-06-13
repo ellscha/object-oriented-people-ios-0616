@@ -43,7 +43,7 @@
     [self ordinalForInteger:self.ageInYears];
     
     //Make a method for TH
-    NSString *birthdayMessage = [NSString stringWithFormat:@"HAPPY %luTH BIRTHDAY, %@!!!", self.ageInYears, [self.name capitalizedString]];
+    NSString *birthdayMessage = [NSString stringWithFormat:@"HAPPY %luTH BIRTHDAY, %@!!!", self.ageInYears, [self.name uppercaseString]];
     NSLog(@"%@", birthdayMessage);
     return birthdayMessage;
     
