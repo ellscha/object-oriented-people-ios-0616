@@ -40,10 +40,10 @@
 
 -(NSString *)celebrateBirthday{
     self.ageInYears += 1;
-    [self ordinalForInteger:self.ageInYears];
+//    [self ordinalForInteger:self.ageInYears];
     
     //Make a method for TH
-    NSString *birthdayMessage = [NSString stringWithFormat:@"HAPPY %luTH BIRTHDAY, %@!!!", self.ageInYears, [self.name uppercaseString]];
+    NSString *birthdayMessage = [NSString stringWithFormat:@"HAPPY %lu%@ BIRTHDAY, %@!!!", self.ageInYears, [[self ordinalForInteger:self.ageInYears] uppercaseString], [self.name uppercaseString]];
     NSLog(@"%@", birthdayMessage);
     return birthdayMessage;
     
